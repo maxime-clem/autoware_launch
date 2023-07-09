@@ -7,7 +7,7 @@
       enable_module: false
       enable_rtc: true
       enable_simultaneous_execution_as_approved_module: false
-      enable_simultaneous_execution_as_candidate_module: true
+      enable_simultaneous_execution_as_candidate_module: false
       priority: 7
       max_module_size: 1
 
@@ -15,36 +15,36 @@
       enable_module: false
       enable_rtc: true
       enable_simultaneous_execution_as_approved_module: false
-      enable_simultaneous_execution_as_candidate_module: true
+      enable_simultaneous_execution_as_candidate_module: false
       priority: 7
       max_module_size: 1
 
     lane_change_left:
       enable_module: true
       enable_rtc: true
-      enable_simultaneous_execution_as_approved_module: true
-      enable_simultaneous_execution_as_candidate_module: true
+      enable_simultaneous_execution_as_approved_module: false
+      enable_simultaneous_execution_as_candidate_module: false
       priority: 6
       max_module_size: 1
 
     lane_change_right:
       enable_module: true
       enable_rtc: true
-      enable_simultaneous_execution_as_approved_module: true
-      enable_simultaneous_execution_as_candidate_module: true
+      enable_simultaneous_execution_as_approved_module: false
+      enable_simultaneous_execution_as_candidate_module: false
       priority: 6
       max_module_size: 1
 
     start_planner:
       enable_module: true
       enable_rtc: true
-      enable_simultaneous_execution_as_approved_module: true
+      enable_simultaneous_execution_as_approved_module: false
       enable_simultaneous_execution_as_candidate_module: false
       priority: 0
       max_module_size: 1
 
     side_shift:
-      enable_module: true
+      enable_module: false
       enable_rtc: true
       enable_simultaneous_execution_as_approved_module: false
       enable_simultaneous_execution_as_candidate_module: false
@@ -62,7 +62,7 @@
     avoidance:
       enable_module: true
       enable_rtc: true
-      enable_simultaneous_execution_as_approved_module: true
+      enable_simultaneous_execution_as_approved_module: false
       enable_simultaneous_execution_as_candidate_module: false
       priority: 5
       max_module_size: 1
