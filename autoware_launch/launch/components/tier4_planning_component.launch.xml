@@ -7,7 +7,7 @@
   <arg name="cruise_planner_type" default="obstacle_cruise_planner" description="options: obstacle_stop_planner, obstacle_cruise_planner, none"/>
   <arg name="use_surround_obstacle_check" default="true"/>
   <arg name="path_smoother_type" default="elastic_band" description="options: elastic_band, none"/>
-  <arg name="velocity_smoother_type" default="JerkFiltered" description="options: JerkFiltered, L2, Analytical, Linf(Unstable)"/>
+  <arg name="velocity_smoother_type" default="Analytical" description="options: JerkFiltered, L2, Analytical, Linf(Unstable)"/>
 
   <!-- variables -->
   <arg name="behavior_config_path" default="$(find-pkg-share autoware_launch)/config/planning/scenario_planning/lane_driving/behavior_planning"/>
