@@ -17,28 +17,40 @@
   ros__parameters:
     required_modules:
       autonomous_driving:
+        # Control (from control.param.yaml)
         /autoware/control/autonomous_driving/node_alive_monitoring: default
         # /autoware/control/autonomous_driving/performance_monitoring/lane_departure: default # temporarily until logic is improved
         /autoware/control/control_command_gate/node_alive_monitoring: default
 
+        # Localization (from localization.param.yaml)
         /autoware/localization/node_alive_monitoring: default
         /autoware/localization/performance_monitoring/matching_score: { sf_at: "warn", lf_at: "none", spf_at: "none" }
         /autoware/localization/performance_monitoring/localization_accuracy: default
 
+        # Map (from map.param.yaml)
         /autoware/map/node_alive_monitoring: default
 
+        # Perception (from perception.param.yaml)
         /autoware/perception/node_alive_monitoring: default
 
+        # Planning (from planning.param.yaml)
         /autoware/planning/node_alive_monitoring: default
         /autoware/planning/performance_monitoring/trajectory_validation: default
 
+        # Sensors (from sensor_kit.param.yaml)
         # /autoware/sensing/node_alive_monitoring: default
+        /autoware/sensing/lidar/pandar/health_monitoring/connection: { sf_at: "none", lf_at: "none", spf_at: "error", auto_recovery: "true"}
+        /autoware/sensing/lidar/pandar/health_monitoring/temperature: { sf_at: "warn", lf_at: "error", spf_at: "none", auto_recovery: "true"}
+        /autoware/sensing/lidar/pandar/health_monitoring/ptp: { sf_at: "none", lf_at: "none", spf_at: "warn", auto_recovery: "true"}
 
+        # System (from system.param.yaml in universe and system.param.yaml in system_launch)
         /autoware/system/node_alive_monitoring: default
         /autoware/system/emergency_stop_operation: default
         /autoware/system/service_log_checker: { sf_at: "warn", lf_at: "none", spf_at: "none" }
         /autoware/system/resource_monitoring: { sf_at: "warn", lf_at: "none", spf_at: "none" }
+        /autoware/system/fms_connection: { sf_at: "warn", lf_at: "none", spf_at: "none" }
 
+        # Vehicle (from vehicle.param.yaml in universe and vehicle.param.yaml in system_launch)
         /autoware/vehicle/node_alive_monitoring: default
 
       external_control:
