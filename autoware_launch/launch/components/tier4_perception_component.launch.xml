@@ -19,6 +19,11 @@
     <arg name="occupancy_grid_map_updater" value="$(var occupancy_grid_map_updater)"/>
     <arg name="objects_filter_method" value="$(var detected_objects_filter_method)"/>
     <arg name="objects_validation_method" value="$(var detected_objects_validation_method)"/>
+    <arg name="centerpoint_model_name" value="aip_x2"/>
+    <arg name="centerpoint_model_path" value="$(var centerpoint_model_path)"/>
+    <arg name="centerpoint_model_param_path" value="$(var centerpoint_model_param_path)"/>
+    <arg name="traffic_light_recognition/fusion_only" value="true"/>
+    <arg name="namespace1" value="camera7"/>
 
     <!-- object recognition -->
     <arg name="object_recognition_detection_compare_map_param_path" value="$(find-pkg-share autoware_launch)/config/perception/object_recognition/detection/clustering/compare_map.param.yaml"/>

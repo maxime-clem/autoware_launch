@@ -7,7 +7,7 @@
 
     # Dynamic expansion by projecting the ego footprint along the path
     dynamic_expansion:
-      enabled: false
+      enabled: true
       ego:
         extra_footprint_offset:
           front: 0.5 # [m] extra length to add to the front of the ego footprint
