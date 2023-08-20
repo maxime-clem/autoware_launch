@@ -10,7 +10,7 @@
       enabled: true
       ego:
         extra_footprint_offset:
-          front: 1.0 # [m] extra length to add to the front of the ego footprint
+          front: 1.5 # [m] extra length to add to the front of the ego footprint
           rear: 0.5 # [m] extra length to add to the rear of the ego footprint
           left: 0.5 # [m] extra length to add to the left of the ego footprint
           right: 0.5 # [m] extra length to add to the rear of the ego footprint
