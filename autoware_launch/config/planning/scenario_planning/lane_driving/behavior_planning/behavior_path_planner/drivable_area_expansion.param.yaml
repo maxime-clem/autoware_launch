@@ -31,7 +31,7 @@
       avoid_linestring:
         types: # linestring types in the lanelet maps that will not be crossed when expanding the drivable area
           - road_border
-        distance: 0.0 # [m] distance to keep between the drivable area and the linestrings to avoid
+        distance: 0.3 # [m] distance to keep between the drivable area and the linestrings to avoid
         compensate:
           enable: false  # if true, when the drivable area cannot be expanded in one direction to completely include the ego footprint, it is expanded in the opposite direction
           extra_distance: 3.0 # [m] extra distance to add to the compensation
