@@ -56,6 +56,8 @@
       <arg name="rviz" value="$(var rviz)"/>
       <arg name="rviz_config" value="$(var rviz_config)"/>
       <arg name="rviz_respawn" value="$(var rviz_respawn)"/>
+      <!-- V2X -->
+      <arg name="launch_v2x" value="false"/>
     </include>
   </group>
 
