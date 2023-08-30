@@ -54,5 +54,5 @@
         intersection_to_occlusion: true
 
     merge_from_private:
-      stop_line_margin: 3.0
+      stop_line_margin: 0.5
       stop_duration_sec: 1.0
