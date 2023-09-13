@@ -96,7 +96,7 @@
           max_prediction_time_for_collision_check : 20.0 # prediction time to check collision between obstacle and ego
 
       slow_down:
-        max_lat_margin: 1.1  # lateral margin between obstacle and trajectory band with ego's width
+        max_lat_margin: 0.8  # lateral margin between obstacle and trajectory band with ego's width
         lat_hysteresis_margin: 0.2
 
         successive_num_to_entry_slow_down_condition: 5
@@ -169,7 +169,7 @@
     slow_down:
       # parameters to calculate slow down velocity by linear interpolation
       min_lat_margin: 0.2
-      max_lat_margin: 1.0
+      max_lat_margin: 0.7
       min_ego_velocity: 2.0
       max_ego_velocity: 8.0
 
