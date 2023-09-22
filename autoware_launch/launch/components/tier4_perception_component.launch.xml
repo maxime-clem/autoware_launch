@@ -27,18 +27,15 @@
     <arg name="remove_unknown" value="false"/>
     <arg name="trust_distance" value="100.0"/>
     <arg name="external/traffic_signals" value="/v2x/traffic_signals"/>
+    <arg name="use_low_height_cropbox" value="true"/>
+    <arg name="use_roi_based_cluster" value="false"/>
 
     <!-- object recognition -->
-    <arg name="object_recognition_detection_compare_map_param_path" value="$(find-pkg-share autoware_launch)/config/perception/object_recognition/detection/clustering/compare_map.param.yaml"/>
     <arg
       name="object_recognition_detection_euclidean_cluster_param_path"
       value="$(find-pkg-share autoware_launch)/config/perception/object_recognition/detection/clustering/euclidean_cluster.param.yaml"
     />
     <arg name="object_recognition_detection_outlier_param_path" value="$(find-pkg-share autoware_launch)/config/perception/object_recognition/detection/clustering/outlier.param.yaml"/>
-    <arg
-      name="object_recognition_detection_voxel_grid_based_euclidean_param_path"
-      value="$(find-pkg-share autoware_launch)/config/perception/object_recognition/detection/clustering/voxel_grid.param.yaml"
-    />
     <arg
       name="object_recognition_detection_voxel_grid_based_euclidean_cluster_param_path"
       value="$(find-pkg-share autoware_launch)/config/perception/object_recognition/detection/clustering/voxel_grid_based_euclidean_cluster.param.yaml"
