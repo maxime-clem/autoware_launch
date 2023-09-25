@@ -57,3 +57,4 @@
     merge_from_private:
       stop_line_margin: 0.5
       stop_duration_sec: 1.0
+      stop_distance_threshold: 1.0
