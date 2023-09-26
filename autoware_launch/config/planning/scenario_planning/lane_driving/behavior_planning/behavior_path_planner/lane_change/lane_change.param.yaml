@@ -64,7 +64,7 @@
 
       # lane change regulations
       regulation:
-        crosswalk: false
+        crosswalk: true
         intersection: false
 
       # lane change cancel
