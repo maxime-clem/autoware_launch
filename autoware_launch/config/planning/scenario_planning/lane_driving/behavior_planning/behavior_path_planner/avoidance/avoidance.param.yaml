@@ -84,7 +84,7 @@
           moving_time_threshold: 1.0
           max_expand_ratio: 0.0
           envelope_buffer_margin: 0.8
-          avoid_margin_lateral: 1.0
+          avoid_margin_lateral: 0.0
           safety_buffer_lateral: 1.0
           safety_buffer_longitudinal: 1.0
         motorcycle:
@@ -94,7 +94,7 @@
           moving_time_threshold: 1.0
           max_expand_ratio: 0.0
           envelope_buffer_margin: 0.8
-          avoid_margin_lateral: 1.0
+          avoid_margin_lateral: 0.0
           safety_buffer_lateral: 1.0
           safety_buffer_longitudinal: 1.0
         pedestrian:
@@ -104,7 +104,7 @@
           moving_time_threshold: 1.0
           max_expand_ratio: 0.0
           envelope_buffer_margin: 0.8
-          avoid_margin_lateral: 1.0
+          avoid_margin_lateral: 0.0
           safety_buffer_lateral: 1.0
           safety_buffer_longitudinal: 1.0
         lower_distance_for_polygon_expansion: 30.0      # [m]
