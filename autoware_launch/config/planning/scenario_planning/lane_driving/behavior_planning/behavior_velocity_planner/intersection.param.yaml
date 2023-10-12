@@ -14,7 +14,7 @@
         consider_wrong_direction_vehicle: false
       stuck_vehicle:
         turn_direction:
-          left: true
+          left: false
           right: true
           straight: true
         use_stuck_stopline: true # stopline generated before the first conflicting area
