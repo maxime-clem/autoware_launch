@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Create comments
         run: |
-          cat << EOF > comments
+          cat << 'EOF' > comments
           ### betaブランチへマージする際のガイドライン
           通常は`Squash and merge`を使用してください。
           ただし、cherry-pickで複数の変更を取り込むときには、変更履歴を残すために`Create a merge commit`を使用してください。
