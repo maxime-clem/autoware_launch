@@ -18,7 +18,7 @@
       # drivable area setting
       use_adjacent_lane: true
       use_opposite_lane: true
-      use_intersection_areas: true
+      use_intersection_areas: false
       use_hatched_road_markings: true
 
       # for debug
