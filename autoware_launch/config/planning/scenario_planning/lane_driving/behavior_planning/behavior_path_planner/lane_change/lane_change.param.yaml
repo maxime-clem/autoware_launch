@@ -74,7 +74,7 @@
         unknown: false
         bicycle: true
         motorcycle: true
-        pedestrian: true
+        pedestrian: false
 
       # collision check
       enable_prepare_segment_collision_check: false
