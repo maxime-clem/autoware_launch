@@ -1,0 +1,19 @@
+/**:
+  ros__parameters:
+    run_out:  # module to stop or slowdown before sudden collisions with obstacles
+      objects:
+        minimum_velocity: 0.5  # [m/s] objects lower than this velocity will be ignored
+        predicted_path_min_confidence : 0.1  # when using predicted paths, ignore the ones whose confidence is lower than this value.
+        cut_predicted_paths_beyond_red_lights: true # if true, predicted paths are cut beyond the stop line of red traffic lights
+
+      stop_on_time_buffer: 0.5   # [s] successive collision detection time required to start the stopping decision
+      stop_off_time_buffer: 1.0  # [s] successive non-collision detection time required to remove a stopping decision
+      ego_time_interval_expansion: 0.2  # [s] time to add to the ego time interval (on both the start and end times)
+      stop_distance_buffer: 1.0   # [m] longitudinal safety distance to keep between ego and the collision position
+      enable_passing_collisions: true  # If true, a collision where ego arrives first is ignored
+      passing_collisions_time_margin: 0.5  # [s] required time margin to decide a passing_collision
+
+      ego:
+        # additional margins to calculate the ego footprint
+        lateral_margin: 0.0 # [m] extra lateral margin
+        longitudinal_margin: 0.0 # [m] extra longitudinal margin
